@@ -1,4 +1,4 @@
-# foursquare
+# Python Wrapper for Resy API
 
 Python wrapper for the Resy API ([resy.com](resy.com)).
 

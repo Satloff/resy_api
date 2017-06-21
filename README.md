@@ -85,3 +85,6 @@ Note: (if you know more, please let me know.)
 * restructure endpoints to be one-to-one with Resy
 * write tests
 * find more endpoints
+
+### Credits
+* thanks to mLewisLogic for the basic api structure [foursquare](https://github.com/mLewisLogic/foursquare)

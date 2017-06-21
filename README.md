@@ -1,6 +1,6 @@
 # Python Wrapper for Resy API
 
-Python wrapper for the Resy API ([resy.com](resy.com)).
+Python wrapper for the Resy API ([resy.com](https://resy.com/)).
 
 Features:
 * Automatic retries

@@ -14,8 +14,7 @@ Dependencies:
 * urllib
 
 
-## Install
-### Install with pip
+### Install
 from within the local clone of git directory:
     #install the local package
     pip install .

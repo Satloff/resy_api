@@ -28,10 +28,14 @@ from within the local clone of git directory:
     # standard package import
     import resy
 
-### Import
+### Authentication
 
-    # standard package import
-    import resy
+    # load the key as part of object creation
+    r = resy.Resy('API KEY')
+    
+    # or create object with set_key method
+    r = resy.Resy()
+    r.set_key('API KEY')
 ### Examples
 
 #### endpoints

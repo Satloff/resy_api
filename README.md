@@ -25,18 +25,18 @@ from within the local clone of git directory:
 
 ### Import
 
-    # Creating Resy object with key
-    r = Resy('API KEY')
+    # standard package import
+    import resy
 
 ### Authentication
 
 Load the key as part of the object creation
     # Creating Resy object with key
-    r = Resy('API KEY')
+    r = resy.Resy('API KEY')
 
 Or, create object and add the key separately
     # Object creating with separate key add
-    r = Resy()
+    r = resy.Resy()
     r.set_key('API KEY')
 
 
@@ -45,7 +45,6 @@ Or, create object and add the key separately
 #### endpoints
 
 ###### location
-    r = Resy('API KEY')
     # use native pythonic calls
     r.location(lat=40.7643304, long=-73.9772046, radius=1)
 
@@ -53,7 +52,6 @@ Or, create object and add the key separately
     r.location({'lat':40.7643304, 'long': -73.9772046, 'radius': 1})
 
 ###### venues
-    r = Resy('API KEY')
     # use native pythonic calls
     r.venues(location_id=1)
 
@@ -61,7 +59,6 @@ Or, create object and add the key separately
     r.location({'location_id': 1})
 
 ###### venue
-    r = Resy('API KEY')
     # use native pythonic calls
     r.venue(location_id=1, url_slug='estela')
 
@@ -69,7 +66,6 @@ Or, create object and add the key separately
     r.location({'location_id': 1, 'url_slug': 'estela'})
 
 ###### calendar
-    r = Resy('API KEY')
     # use native pythonic calls
     r.calendar(id=6)
 
@@ -77,7 +73,6 @@ Or, create object and add the key separately
     r.location({'id': 6})
 
 ###### top
-    r = Resy('API KEY')
     # use native pythonic calls
     r.top(day='2017-06-21', location_id='li', num_seats=2)
 

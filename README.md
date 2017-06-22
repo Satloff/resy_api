@@ -22,7 +22,8 @@ from within the local clone of git directory:
 
 ## Usage
 ### Import
-    #Import the package
+
+Import the package
     import resy
 
 ### Authentication

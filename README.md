@@ -20,13 +20,16 @@ from within the local clone of git directory:
     pip install .
 
 ## Usage
+
+
+
 ### Import
 
 Import the package
+    # standard package import
     import resy
 
-### Authentication
-
+    ### Authentication
 Load the key as part of the object creation
     # Creating Resy object with key
     r = Resy('API KEY')

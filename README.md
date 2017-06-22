@@ -14,18 +14,27 @@ Dependencies:
 * urllib
 
 
+## Install
+### Install with pip
+from within the local clone of git directory:
+    #install the local package
+    pip install .
+
 ## Usage
+### Import
+    #Import the package
+    import resy
 
 ### Authentication
 
 Load the key as part of the object creation
     # Creating Resy object with key
-    resy = Resy('API KEY')
+    r = Resy('API KEY')
 
 Or, create object and add the key separately
     # Object creating with separate key add
-    resy = Resy()
-    resy.set_key('API KEY')
+    r = Resy()
+    r.set_key('API KEY')
 
 
 ### Examples
@@ -33,44 +42,44 @@ Or, create object and add the key separately
 #### endpoints
 
 ###### location
-    resy = Resy('API KEY')
+    r = Resy('API KEY')
     # use native pythonic calls
-    resy.location(lat=40.7643304, long=-73.9772046, radius=1)
+    r.location(lat=40.7643304, long=-73.9772046, radius=1)
 
     # or pass parameters as a dictionary
-    resy.location({'lat':40.7643304, 'long': -73.9772046, 'radius': 1})
+    r.location({'lat':40.7643304, 'long': -73.9772046, 'radius': 1})
 
 ###### venues
-    resy = Resy('API KEY')
+    r = Resy('API KEY')
     # use native pythonic calls
-    resy.venues(location_id=1)
+    r.venues(location_id=1)
 
     # or pass parameters as a dictionary
-    resy.location({'location_id': 1})
+    r.location({'location_id': 1})
 
 ###### venue
-    resy = Resy('API KEY')
+    r = Resy('API KEY')
     # use native pythonic calls
-    resy.venue(location_id=1, url_slug='estela')
+    r.venue(location_id=1, url_slug='estela')
 
     # or pass parameters as a dictionary
-    resy.location({'location_id': 1, 'url_slug': 'estela'})
+    r.location({'location_id': 1, 'url_slug': 'estela'})
 
 ###### calendar
-    resy = Resy('API KEY')
+    r = Resy('API KEY')
     # use native pythonic calls
-    resy.calendar(id=6)
+    r.calendar(id=6)
 
     # or pass parameters as a dictionary
-    resy.location({'id': 6})
+    r.location({'id': 6})
 
 ###### top
-    resy = Resy('API KEY')
+    r = Resy('API KEY')
     # use native pythonic calls
-    resy.top(day='2017-06-21', location_id='li', num_seats=2)
+    r.top(day='2017-06-21', location_id='li', num_seats=2)
 
     # or pass parameters as a dictionary
-    resy.top({'day': '2017-06-21', 'location_id': 'li', 'num_seats': 2})
+    r.top({'day': '2017-06-21', 'location_id': 'li', 'num_seats': 2})
 
 ### Partial endpoint list
 Note: (if you know more, please let me know.)

@@ -14,9 +14,11 @@ Dependencies:
 * urllib
 
 
-### Install
-from within the local clone of git directory:
-    #install the local package
+
+### install
+
+from within the resy directory
+    # do standard local pip install
     pip install .
 
 ## Usage

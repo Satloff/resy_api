@@ -29,7 +29,6 @@ from within the local clone of git directory:
     import resy
 
 ### Authentication
-
 Load the key as part of the object creation
     # Creating Resy object with key
     r = resy.Resy('API KEY')

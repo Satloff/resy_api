@@ -15,10 +15,10 @@ Dependencies:
 
 
 
-### Import
+### install
 
-    # standard package import
-    import resy
+    # from within resy directory
+    pip install .
 
 ## Usage
 
